@@ -1,6 +1,5 @@
 import unittest
 from orderSystem import Order, OrderList
-
 class TestOrderSystem(unittest.TestCase):
 
     def linkify(self, array):
@@ -26,3 +25,6 @@ class TestOrderSystem(unittest.TestCase):
         newList.append(1)
         newList.append(2)
         self.assertEqual(self.listify(newList.head),[1,2])
+
+if __name__ == "__main__":
+    unittest.main()
